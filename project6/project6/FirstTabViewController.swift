@@ -16,15 +16,20 @@ class FirstTabViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.lightGray
-        if let website = URL(string: "http://cs.binghamton.edu/~pmadden/courses/441score/getscores.php") {
+        if let website = URL(string: "https://cs.binghamton.edu/~pmadden/courses/441score/getscores.php") {
+            //cs.binghamton.edu/~pmadden/courses/441score/getscores.php
+            //www.python.org
+            //MyNotes: YOU MUST USE HTTPS NOT JUST HTTP because apple will block it if not with error code 1022
             do{
-                var label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-                label.center = CGPoint(x: 160, y: 284)
-                label.textAlignment = NSTextAlignment.center
-                label.text = "Website loaded!"
-                self.view.addSubview(label)
                 let contents = try String(contentsOf: website)
                 print(contents)
+                let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+                label.center = CGPoint(x: 160, y: 284)
+                label.textAlignment = NSTextAlignment.center
+                //label.text = "Website loaded!"
+                label.text = contents
+                self.view.addSubview(label)
+                
             } catch{
                 print("Website did not load properly")
             }
