@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		751F28AF237C599200B6B2E7 /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751F28AE237C599200B6B2E7 /* FirstTabViewController.swift */; };
 		751F28B1237C5AA100B6B2E7 /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751F28B0237C5AA100B6B2E7 /* SecondTabViewController.swift */; };
+		7561E18E2382FA5B00B26EAD /* jsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7561E18D2382FA5B00B26EAD /* jsonData.swift */; };
 		7562D4B4237BAFDD00CCFEAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562D4B3237BAFDD00CCFEAC /* AppDelegate.swift */; };
 		7562D4B8237BAFDD00CCFEAC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7562D4B7237BAFDD00CCFEAC /* Actions.sks */; };
 		7562D4BF237BAFDD00CCFEAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7562D4BD237BAFDD00CCFEAC /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		751F28AE237C599200B6B2E7 /* FirstTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
 		751F28B0237C5AA100B6B2E7 /* SecondTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
+		7561E18D2382FA5B00B26EAD /* jsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonData.swift; sourceTree = "<group>"; };
 		7562D4B0237BAFDD00CCFEAC /* project6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7562D4B3237BAFDD00CCFEAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7562D4B7237BAFDD00CCFEAC /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				7562D4EE237BB48600CCFEAC /* GameViewController.swift */,
 				751F28B0237C5AA100B6B2E7 /* SecondTabViewController.swift */,
 				751F28AE237C599200B6B2E7 /* FirstTabViewController.swift */,
+				7561E18D2382FA5B00B26EAD /* jsonData.swift */,
 				7562D4ED237BB48600CCFEAC /* LeaderBoardViewController.swift */,
 				7562D4EB237BB48600CCFEAC /* StartViewController.swift */,
 				7562D4EA237BB48600CCFEAC /* Singleton.swift */,
@@ -292,6 +295,7 @@
 			files = (
 				7562D4EF237BB48600CCFEAC /* GameScene.swift in Sources */,
 				7562D4F1237BB48600CCFEAC /* StartViewController.swift in Sources */,
+				7561E18E2382FA5B00B26EAD /* jsonData.swift in Sources */,
 				751F28B1237C5AA100B6B2E7 /* SecondTabViewController.swift in Sources */,
 				7562D4F0237BB48600CCFEAC /* Singleton.swift in Sources */,
 				7562D4B4237BAFDD00CCFEAC /* AppDelegate.swift in Sources */,

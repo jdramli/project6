@@ -13,3 +13,12 @@ Progress log:
 
 11/15:  Created request-type object to load JSON data from website (still buggy)
             Created textlabel that loads if website loads
+
+11/18: Fixed 1022 error with loading JSON data from the web (requires "https" connection not just "http")
+            Added some code to test printing the contents into a label on screen (success)
+
+11/19:  Added code to copy the website contents to the singleton
+            Running multiple tests to learn the swift 'split'-type function called 'components'
+            Print statements show successful splits of the sections of JSON data.
+            Looking more into this function to extract relevant data to load into the Singleton where it can be added to the local leaderboard. 
+

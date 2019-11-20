@@ -21,6 +21,8 @@ class Singleton{
     var background_color : UIColor = UIColor.orange
     var recent_bugs_busted = 0
     
+    var downloaded_contents = ""
+    
     private init(){
         
     }

@@ -23,12 +23,14 @@ class FirstTabViewController: UIViewController {
             do{
                 let contents = try String(contentsOf: website)
                 print(contents)
+                print("Test Separator before printing the 'parse' below", String(16))
                 let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
                 label.center = CGPoint(x: 160, y: 284)
                 label.textAlignment = NSTextAlignment.center
                 //label.text = "Website loaded!"
                 label.text = contents
                 self.view.addSubview(label)
+                Singleton.shared.downloaded_contents = contents
                 
             } catch{
                 print("Website did not load properly")
@@ -37,6 +39,14 @@ class FirstTabViewController: UIViewController {
         else{
             print("url was bad")
         }
+        
+        let parse = Singleton.shared.downloaded_contents.components(separatedBy: "}")
+        print(parse)
+        print("Next separator to test indexing into the split string")
+        print(parse[1])
+        let parse2 = parse[1].components(separatedBy: ":")
+        print("Testing 'parse2' on next line")
+        print(parse2)
 
     }
 }
