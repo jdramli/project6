@@ -22,3 +22,6 @@ Progress log:
             Print statements show successful splits of the sections of JSON data.
             Looking more into this function to extract relevant data to load into the Singleton where it can be added to the local leaderboard. 
 
+11/20:  Identified components indices by splitting with component characters ":" and ","
+            Used the indices and component split indices to pull and print games "testing", "asteroids", and "doesntmatter"
+            Planning on putting in buttons and text boxes to create an interaction between loading these scores to current in-game table.
