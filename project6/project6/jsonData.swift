@@ -9,13 +9,18 @@
 import Foundation
 
 struct ScoreData : Codable{
+    let player : String
     let game : String
     let score : Int
 }
 
-let score_to_load = ScoreData(game: "doesntmatter", score: 542)
-
-
+/*
+let score_to_load = ScoreData(player: "HlayreA", game: "testgamegetshellaced", score: 542)
+let url = URL(string: "https://cs.binghamton.edu/~pmadden/courses/441score/getscores.php")!
+var request = URLRequest(url: url)
+request.httpMethod = "POST"
+request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+*/
 /*
 //Code from //https://developer.apple.com/documentation/foundation/url_loading_system/uploading_data_to_a_website
  

@@ -14,7 +14,12 @@ class FirstTabViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+        label.center = CGPoint(x: 160, y: 284)
+        label.textAlignment = NSTextAlignment.center
+        //label.text = "Website loaded!"
+        self.view.addSubview(label)
+        
         self.view.backgroundColor = UIColor.lightGray
         if let website = URL(string: "https://cs.binghamton.edu/~pmadden/courses/441score/getscores.php") {
             //cs.binghamton.edu/~pmadden/courses/441score/getscores.php
@@ -24,13 +29,10 @@ class FirstTabViewController: UIViewController {
                 let contents = try String(contentsOf: website)
                 print(contents)
                 print("Test Separator before printing the 'parse' below", String(16))
-                let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-                label.center = CGPoint(x: 160, y: 284)
-                label.textAlignment = NSTextAlignment.center
-                //label.text = "Website loaded!"
-                label.text = contents
-                self.view.addSubview(label)
                 Singleton.shared.downloaded_contents = contents
+                let parse = Singleton.shared.downloaded_contents.components(separatedBy: "}")
+                label.text = parse[2].components(separatedBy: ":")[2].components(separatedBy: ",")[0]
+                
                 
             } catch{
                 print("Website did not load properly")
