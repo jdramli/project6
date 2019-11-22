@@ -25,3 +25,8 @@ Progress log:
 11/20:  Identified components indices by splitting with component characters ":" and ","
             Used the indices and component split indices to pull and print games "testing", "asteroids", and "doesntmatter"
             Planning on putting in buttons and text boxes to create an interaction between loading these scores to current in-game table.
+
+11/22:  Created an example of JSON loadable data via Apple's example.
+            Found a way to load data directly to the php site by using the arguments on the other side of the "?"
+            Testing to see what the minimum code is to use that upload ability.
+            Uploaded some blank scores, and some test scores/test games.

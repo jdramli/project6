@@ -27,7 +27,14 @@ class SecondTabViewController: UIViewController {
         guard let uploadData = try? JSONEncoder().encode(score_to_load) else {
             return
         }
-        let url = URL(string: "https://cs.binghamton.edu/~pmadden/courses/441score/postscore.php?player=joetest1&game=asteroids&score=43")!
+        //MyNotes: important HTML -- the website below accepts arguments after the "?" just like any HTML page using a "?".  Altering the string after the "=" signs is what will allow us to post in this neatly packaged exercise.  May not need all of the functionality below.
+        //This section should hopefully take the information from the first tab when it loads the contents into the Singleton and make them available to insert into the string here:
+        let parse = Singleton.shared.downloaded_contents.components(separatedBy: "}")
+       
+        
+        //This line of code isolates a string that can be appended to arguments of the URL request below.
+        let urlarguments = "player=hlayreA" + "&game=whoa" + "&score=542"
+        let url = URL(string: "https://cs.binghamton.edu/~pmadden/courses/441score/postscore.php?" + urlarguments)!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -51,26 +58,7 @@ class SecondTabViewController: UIViewController {
         }
         task.resume()
         
-        if let website = URL(string: "https://cs.binghamton.edu/~pmadden/courses/441score/getscores.php") {
-            //cs.binghamton.edu/~pmadden/courses/441score/getscores.php
-            //www.python.org
-            //MyNotes: YOU MUST USE HTTPS NOT JUST HTTP because apple will block it if not with error code 1022
-            do{
-                let contents = try String(contentsOf: website)
-                print(contents)
-                print("printing game name below, should modify 0?")
-                Singleton.shared.downloaded_contents = contents
-                let parse = Singleton.shared.downloaded_contents.components(separatedBy: "}")
-                print(parse[0].components(separatedBy: ":")[2].components(separatedBy: ",")[0])
-                
-                
-            } catch{
-                print("Website did not load properly")
-            }
-        }
-        else{
-            print("url was bad")
-        }
+        
 
     }
     
