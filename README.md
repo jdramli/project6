@@ -30,3 +30,12 @@ Progress log:
             Found a way to load data directly to the php site by using the arguments on the other side of the "?"
             Testing to see what the minimum code is to use that upload ability.
             Uploaded some blank scores, and some test scores/test games.
+
+
+11/23:  Added code to upload a random score with the name "BAR" and gamename "asteroids" to the upload site
+            Added code to download a random score of index 0 through 9 and output the "playername", "gamename" and "score" to a label on screen.
+            Fixed bug where NSURL connection code was posting the score twice
+            Trying to use a JSON style load as well.
+            Added code to upload most recent Bug Buster score to the CS website!
+            
+        

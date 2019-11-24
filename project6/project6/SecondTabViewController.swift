@@ -16,7 +16,7 @@ class SecondTabViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.purple
-        
+        /*
         struct ScoreData : Codable{
             let player : String
             let game : String
@@ -27,8 +27,10 @@ class SecondTabViewController: UIViewController {
         guard let uploadData = try? JSONEncoder().encode(score_to_load) else {
             return
         }
+ */
         //MyNotes: important HTML -- the website below accepts arguments after the "?" just like any HTML page using a "?".  Altering the string after the "=" signs is what will allow us to post in this neatly packaged exercise.  May not need all of the functionality below.
         //This section should hopefully take the information from the first tab when it loads the contents into the Singleton and make them available to insert into the string here:
+        /*
         let parse = Singleton.shared.downloaded_contents.components(separatedBy: "}")
        
         
@@ -57,6 +59,7 @@ class SecondTabViewController: UIViewController {
             }
         }
         task.resume()
+         */
         
         
 
@@ -78,10 +81,12 @@ class SecondTabViewController: UIViewController {
         request.httpMethod = "POST"
         //request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
+        /*
         NSURLConnection.sendAsynchronousRequest(request, queue: OperationQueue.main) {(response, data, error) in
             guard let data = data else { return }
             print(String(data: data, encoding: .utf8)!)
         }
+         */
         task.resume()
         
     }
