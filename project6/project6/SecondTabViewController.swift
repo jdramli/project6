@@ -61,8 +61,31 @@ class SecondTabViewController: UIViewController {
         
 
     }
-    
 
+    
+    @IBAction func uploadPress(_ sender: Any) {
+        print("button outlet loaded")
+        
+        let score = Int.random(in: 0...1000)
+        //let urlarguments = "player=invadedscore" + "&game=pressrandombutton" + "&score=" + String(score)
+        let urlarguments = "player=BAR" + "&game=asteroids" + "&score=" + String(score)
+        let url = URL(string: "https://cs.binghamton.edu/~pmadden/courses/441score/postscore.php?" + urlarguments)!
+        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+            guard let data = data else { return }
+            print(String(data: data, encoding: .utf8)!)
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        //request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: OperationQueue.main) {(response, data, error) in
+            guard let data = data else { return }
+            print(String(data: data, encoding: .utf8)!)
+        }
+        task.resume()
+        
+    }
+    
     /*
     // MARK: - Navigation
 

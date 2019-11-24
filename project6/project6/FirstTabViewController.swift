@@ -10,11 +10,15 @@ import UIKit
 
 
 class FirstTabViewController: UIViewController {
-
+    
+    var parse = [""]
+    let label = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 210))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.numberOfLines = 5
         label.center = CGPoint(x: 160, y: 284)
         label.textAlignment = NSTextAlignment.center
         //label.text = "Website loaded!"
@@ -42,11 +46,11 @@ class FirstTabViewController: UIViewController {
             print("url was bad")
         }
         
-        let parse = Singleton.shared.downloaded_contents.components(separatedBy: "}")
+        parse = Singleton.shared.downloaded_contents.components(separatedBy: "}")
         print(parse)
         print("Next separator to test indexing into the split string")
         print(parse[1])
-        var parse2 = parse[1].components(separatedBy: ":")
+        let parse2 = parse[1].components(separatedBy: ":")
         print("Testing 'parse2' on next line")
         print(parse2)
         print("Next test of more subsection of parse2")
@@ -70,4 +74,19 @@ class FirstTabViewController: UIViewController {
         
         
     }
+    
+    @IBAction func downloadScore(_ sender: Any) {
+        
+        print ("Extract button has been pressed")
+        let rand_index = Int.random(in: 0...9)
+    
+        var invaded_game_name = parse[rand_index].components(separatedBy: ":")[2].components(separatedBy: ",")[0]
+        var invaded_score = parse[rand_index].components(separatedBy: ":")[3].components(separatedBy: ",")[0]
+        
+        
+        print ("The score extracted is score number: " + String(rand_index) + "\n" + ", of game: " + invaded_game_name + "\n" + ", with score: " + String(invaded_score))
+        label.text = ("The score extracted is score number: " + String(rand_index) + ", of game: " + invaded_game_name + ", with score: " + String(invaded_score))
+        
+    }
+    
 }

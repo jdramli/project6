@@ -99,9 +99,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4c-n8-MoT">
-                                <rect key="frame" x="79" y="261" width="257" height="30"/>
+                                <rect key="frame" x="44" y="261" width="327" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Make Score invade local leaderboard!"/>
+                                <state key="normal" title="Upload a random score to the CS score website"/>
+                                <connections>
+                                    <action selector="uploadPress:" destination="uH2-Oc-DZJ" eventType="touchUpInside" id="uCP-dl-SXV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -133,6 +136,9 @@
                                 <rect key="frame" x="73" y="406" width="269" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Press to Extract a Random Game Score"/>
+                                <connections>
+                                    <action selector="downloadScore:" destination="JJE-Ko-lf1" eventType="touchUpInside" id="c2o-V3-sNn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
