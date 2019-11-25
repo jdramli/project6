@@ -140,6 +140,14 @@
                                     <action selector="downloadScore:" destination="JJE-Ko-lf1" eventType="touchUpInside" id="c2o-V3-sNn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJV-Dl-QMo">
+                                <rect key="frame" x="76" y="480" width="262" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Press to link to the CS Score webpage"/>
+                                <connections>
+                                    <action selector="linkToCSScorePage:" destination="JJE-Ko-lf1" eventType="touchUpInside" id="8wY-Qg-vMc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="u8G-GI-Eia"/>

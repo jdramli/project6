@@ -37,5 +37,7 @@ Progress log:
             Fixed bug where NSURL connection code was posting the score twice
             Trying to use a JSON style load as well.
             Added code to upload most recent Bug Buster score to the CS website!
+
+11/24:  Added a button link to the getscores CS scores webpage .  The webpage does successfully open up and display within the app when the button is clicked
             
         

@@ -89,4 +89,12 @@ class FirstTabViewController: UIViewController {
         
     }
     
+    @IBAction func linkToCSScorePage(_ sender: Any) {
+        //This is the code that opens the CS scores webpage
+        let mylink : URL
+        mylink = URL(string: "https://cs.binghamton.edu/~pmadden/courses/441score/getscores.php")!
+        UIApplication.shared.open(
+            mylink, options: [:], completionHandler: nil)
+        //End of code that opens the CS scores webpage
+    }
 }
