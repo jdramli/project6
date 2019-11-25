@@ -39,9 +39,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZC-97-Da5">
-                                <rect key="frame" x="110" y="466" width="160" height="30"/>
+                                <rect key="frame" x="91" y="466" width="199" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tabbed View Controller"/>
+                                <state key="normal" title="CS Highscore API Interaction"/>
                                 <connections>
                                     <segue destination="2Eu-oB-eoZ" kind="show" id="jKA-9s-UXj"/>
                                 </connections>
@@ -215,6 +215,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6xZ-Nd-jDd"/>
+        <segue reference="EuC-xj-EsJ"/>
     </inferredMetricsTieBreakers>
 </document>

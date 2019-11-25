@@ -3,6 +3,13 @@
 
 Project 6 goals: add database retrieval and create multiple highscore views to project 5, i.e. Create a separate view of database high scores vs. local high scores.
 
+This project ended up adding some web functionality.  The framework for an interface between our upload and download CS API is complete.  Some attempts were made to make a more universal JSON loading/reading set of API commands, but they were not successful.  
+Implementation of a tabview controller has been executed.  This allows the user to go to the additional section "CS Highscore API Interaction".  There, the tabview controller brings up a label with the current game name of highscore table number 3 (index 2).  There are two buttons here.  The first will extract a set of data 0 through 9, each index corresponding to an "entry" of "playername", "gamename", and "highscore", each of which will be displayed in the textbox when the button is pressed.  The second button actually links the user to the highscore page within the app.  Both work successfully
+
+The second screen of the tabview controller is more upload related.  There is one button which will upload a random score to the database with the player name "BAR" and the game name "asteroids".  This button works successfully as well.
+
+Finally, this upload functionality was added to the actual win-condition section of the game code, in the original game links.  Therefore, upon player-enemy contact during normal gameplay, the user's current number of "Bugs Busted" will be uploaded to the CS database with the playername: "CottonEyeJoe" and  gamename: "Bug Buster".   
+
 
 Progress log:
 11/12: Created initial repository and began research
@@ -39,5 +46,7 @@ Progress log:
             Added code to upload most recent Bug Buster score to the CS website!
 
 11/24:  Added a button link to the getscores CS scores webpage .  The webpage does successfully open up and display within the app when the button is clicked
+
+11/25: Did some minor cleanup, prepared final commit.
             
         
