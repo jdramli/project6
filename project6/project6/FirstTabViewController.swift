@@ -80,8 +80,8 @@ class FirstTabViewController: UIViewController {
         print ("Extract button has been pressed")
         let rand_index = Int.random(in: 0...9)
     
-        var invaded_game_name = parse[rand_index].components(separatedBy: ":")[2].components(separatedBy: ",")[0]
-        var invaded_score = parse[rand_index].components(separatedBy: ":")[3].components(separatedBy: ",")[0]
+        let invaded_game_name = parse[rand_index].components(separatedBy: ":")[2].components(separatedBy: ",")[0]
+        let invaded_score = parse[rand_index].components(separatedBy: ":")[3].components(separatedBy: ",")[0]
         
         
         print ("The score extracted is score number: " + String(rand_index) + "\n" + ", of game: " + invaded_game_name + "\n" + ", with score: " + String(invaded_score))

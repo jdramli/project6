@@ -15,7 +15,7 @@ class SecondTabViewController: UIViewController {
         print("view loaded now try upload")
 
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.purple
+        self.view.backgroundColor = UIColor.red
         /*
         struct ScoreData : Codable{
             let player : String
