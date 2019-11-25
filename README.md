@@ -9,6 +9,7 @@ Implementation of a tabview controller has been executed.  This allows the user 
 The second screen of the tabview controller is more upload related.  There is one button which will upload a random score to the database with the player name "BAR" and the game name "asteroids".  This button works successfully as well.
 
 Finally, this upload functionality was added to the actual win-condition section of the game code, in the original game links.  Therefore, upon player-enemy contact during normal gameplay, the user's current number of "Bugs Busted" will be uploaded to the CS database with the playername: "CottonEyeJoe" and  gamename: "Bug Buster".   
+There are a large number of console print statements that I intentionally left in there for educational/reference (and formerly debugging) purposes.
 
 
 Progress log:

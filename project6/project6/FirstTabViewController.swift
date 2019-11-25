@@ -16,7 +16,8 @@ class FirstTabViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tabBarItem.title = "GetScores Functions"
+        self.navigationItem.title = "Upload and Get Scores"
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = 5
         label.center = CGPoint(x: 160, y: 284)

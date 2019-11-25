@@ -25,6 +25,7 @@
 		7562D4F6237BB5BF00CCFEAC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7562D4F5237BB5BF00CCFEAC /* GameScene.sks */; };
 		7562D4FC237BBB4B00CCFEAC /* enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7562D4FB237BBB4A00CCFEAC /* enemy.png */; };
 		7562D4FE237BBD8D00CCFEAC /* bugs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7562D4FD237BBD8D00CCFEAC /* bugs.jpg */; };
+		75EB568D238C87F900CEEA38 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EB568C238C87F900CEEA38 /* TabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		7562D4F5237BB5BF00CCFEAC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		7562D4FB237BBB4A00CCFEAC /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
 		7562D4FD237BBD8D00CCFEAC /* bugs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bugs.jpg; sourceTree = "<group>"; };
+		75EB568C238C87F900CEEA38 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				7562D4EE237BB48600CCFEAC /* GameViewController.swift */,
 				751F28B0237C5AA100B6B2E7 /* SecondTabViewController.swift */,
 				751F28AE237C599200B6B2E7 /* FirstTabViewController.swift */,
+				75EB568C238C87F900CEEA38 /* TabViewController.swift */,
 				7561E18D2382FA5B00B26EAD /* jsonData.swift */,
 				7562D4ED237BB48600CCFEAC /* LeaderBoardViewController.swift */,
 				7562D4EB237BB48600CCFEAC /* StartViewController.swift */,
@@ -301,6 +304,7 @@
 				7562D4B4237BAFDD00CCFEAC /* AppDelegate.swift in Sources */,
 				7562D4F4237BB48600CCFEAC /* GameViewController.swift in Sources */,
 				751F28AF237C599200B6B2E7 /* FirstTabViewController.swift in Sources */,
+				75EB568D238C87F900CEEA38 /* TabViewController.swift in Sources */,
 				7562D4F3237BB48600CCFEAC /* LeaderBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

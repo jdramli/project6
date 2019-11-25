@@ -13,7 +13,7 @@ class SecondTabViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("view loaded now try upload")
-
+        self.tabBarItem.title = "Upload Score Function"
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.red
         /*

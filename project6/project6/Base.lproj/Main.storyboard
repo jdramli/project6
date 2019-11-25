@@ -90,7 +90,7 @@
             </objects>
             <point key="canvasLocation" x="139" y="110"/>
         </scene>
-        <!--Item 2-->
+        <!--Upload Function-->
         <scene sceneID="ZKh-Fn-3LH">
             <objects>
                 <viewController id="uH2-Oc-DZJ" customClass="SecondTabViewController" customModule="project6" sceneMemberID="viewController">
@@ -110,13 +110,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="8Td-hE-04w"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="M8F-5c-eyz"/>
+                    <tabBarItem key="tabBarItem" title="Upload Function" id="M8F-5c-eyz" userLabel="Upload Function"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWb-Ln-FAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="851" y="1461"/>
         </scene>
-        <!--Item 1-->
+        <!--GetScores Functions-->
         <scene sceneID="aAu-7K-Kiv">
             <objects>
                 <viewController id="JJE-Ko-lf1" customClass="FirstTabViewController" customModule="project6" sceneMemberID="viewController">
@@ -152,17 +152,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="u8G-GI-Eia"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="sft-XU-wyA"/>
+                    <tabBarItem key="tabBarItem" title="GetScores Functions" id="sft-XU-wyA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6VA-RX-6Al" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Hpr-yI-J4G" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="850.72463768115949" y="812.94642857142856"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab View Controller-->
         <scene sceneID="KjO-YR-4TX">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="2Eu-oB-eoZ" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="2Eu-oB-eoZ" customClass="TabViewController" customModule="project6" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="stb-0g-gKj"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cUr-ov-ERx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
